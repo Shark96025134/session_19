@@ -42,13 +42,15 @@ except:
 def fun(a,b):
    
    try:
-        c=((a+b)/(a-b))
+        
+	c=((a+b)/(a-b))
    
    except ZeroDivisionError:
            
 	   print("a/b is 0")
    
    else:
+       
        print(c)
 
 
@@ -66,12 +68,16 @@ try:
     k = 5/5
 
 except ZeroDivisionError:
+    
     print("Values cannot be divided by zero")
     
 else:
+    
     print("Else Block Executes")
+    
     print(k)
     
 finally:
+    
     print("This Block Always executes")
     #---------------------------------------------------------------------------------#
