@@ -45,7 +45,8 @@ def fun(a,b):
         c=((a+b)/(a-b))
    
    except ZeroDivisionError:
-        print("a/b is 0")
+           
+	   print("a/b is 0")
    
    else:
        print(c)
