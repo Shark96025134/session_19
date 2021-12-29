@@ -1,83 +1,83 @@
-#Error
+    #Error
 
-#amt = 10
+    #amt = 10
 
-if (amt >20):
-    print ("Eligible to purchase")
-
-
-if (amt <20):
-    print ("Not Eligible")
-
-#---------------------------------------------------------------------------------#
-
-#Exception
-
-num = 100
-
-result = 100/0
+    if (amt >20):
+        print ("Eligible to purchase")
 
 
-print("The result is:",result)
+    if (amt <20):
+        print ("Not Eligible")
 
 #---------------------------------------------------------------------------------#
 
-a = [1,2,3]
+    #Exception
+  
+    num = 100
 
-try:
+    result = 100/0
+
+
+    print("The result is:",result)
+  
+#---------------------------------------------------------------------------------#
+
+    a = [1,2,3]
+
+    try:
     
-	print("Second element = %d"%(a[1]))
+	   print("Second element = %d"%(a[1]))
     
-	print("Fourth element = %d"%(a[3]))
+	   print("Fourth element = %d"%(a[3]))
 
 
-except:
+    except:
     
 	print("An Error Occoured")
 
 #---------------------------------------------------------------------------------#    
 
-#try with else clause
-
-def fun(a,b):
+    #try with else clause
+  
+    def fun(a,b):
    
-   try:
+     try:
         
 	c=((a+b)/(a-b))
    
-   except ZeroDivisionError:
+    except ZeroDivisionError:
            
 	   print("a/b is 0")
    
-   else:
+    else:
        
        print(c)
 
 
-fun(2,3)
+    fun(2,3)
 
-fun(3,3)
+    fun(3,3)
 
 #---------------------------------------------------------------------------------#
 
-#finally
+    #finally
 
-try:
+    try:
    
-   k = 10/5
+    k = 10/5
     k = 5/5
 
-except ZeroDivisionError:
+    except ZeroDivisionError:
     
     print("Values cannot be divided by zero")
     
-else:
+    else:
     
     print("Else Block Executes")
     
     print(k)
     
-finally:
+    finally:
     
     print("This Block Always executes")
-    #---------------------------------------------------------------------------------#
+   #---------------------------------------------------------------------------------#
